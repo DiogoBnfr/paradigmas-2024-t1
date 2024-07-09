@@ -23,4 +23,3 @@ features/%: features/%.opp $(patsubst %.c,%.opp,$(USER_FILES))
 
 main: src/main.o $(patsubst %.c,%.o,$(USER_FILES))
 	$(CC) $(CFLAGS) -o $(@) $(^) $(LDFLAFGS)
-
